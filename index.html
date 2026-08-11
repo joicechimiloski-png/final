@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  </div>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog Minecraft</title>
+
+
+   <style>
+       body{
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+       }
+
+
+       header{
+           background-color: #2E8B57;
+           color: rgb(255, 255, 255);
+           text-align: center;
+           max-width: 800px;
+           margin: 20px auto 0;
+           padding: 16px;
+       }
+
+       Copa do Mundo
+       main{
+           background-color: #09612f;
+           color: white;
+           max-width: 800px;
+           margin: 0 auto;
+           padding: 16px;
+           display: flex;
+           gap: 20px;
+           align-items: flex-start;
+       }
+
+
+       img{
+           width: 150px;
+           height: 150px;
+           border-radius: 10px;
+       }
+
+
+       .botoes{
+           max-width: 800px;
+           margin: 20px auto;
+           text-align: center;
+       }
+
+
+       button{
+           padding: 10px 20px;
+           margin: 5px;
+           font-size: 16px;
+           cursor: pointer;
+       }
+   </style>
+</head>
+
+
+<body>
+
+
+<header>
+   <h1>Copa do Mundo</h1>
+   <p>Conheça a história de um dos jogos mais famosos do mundo.</p>
+</header>
+
+
+<main>
+
+
+   <img src="neymar .png" alt="Logo copa">
+
+
+   <div>
+       <h2>A história da Copa</h2>
+
+
+       <p><strong>Por:Joice Chimiloski</strong></p>
+
+
+       <p>
+        A primeira Copa do Mundo aconteceu em 1930, após muitos anos de tentativas de se organizar uma competição mundial de futebol. O início do evento está diretamente ligado ao surgimento da Fifa e sua atuação na popularização e profissionalização do futebol.
+       </p>
+
+
+       <p>
+        A Copa do Mundo é o maior torneio de futebol do planeta. Criada pela FIFA em 1930, a competição ocorre a cada quatro anos. O torneio reúne as melhores seleções nacionais e atrai bilhões de espectadores. 
+       </p>
+
+
+       <p>
+        A Copa do Mundo de Futebol é o maior evento esportivo do planeta. Ela une bilhões de pessoas, mexe com a economia global, aproxima culturas diferentes e cria memórias afetivas inesquecíveis para países inteiros. 
+       </p>
+   </div>
+
+
+</main>
+
+
+<div class="botoes">
+
+
+   <button onclick="curtir()">
+       ❤️ <span id="likes">0</span>
+   </button>
+
+
+   <button onclick="gostar()">
+       👍 <span id="gostei">0</span>
+   </button>
+
+
+</div>
+
+
+<script>
+let likes = 0;
+let gostei = 0;
+
+
+let curtiu = false;
+let gostou = false;
+
+
+function curtir() {
+   if (curtiu) {
+       likes--;
+       curtiu = false;
+   } else {
+       likes++;
+       curtiu = true;
+   }
+   document.getElementById("likes").textContent = likes;
+}
+
+
+function gostar() {
+   if (gostou) {
+       gostei--;
+       gostou = false;
+   } else {
+       gostei++;
+       gostou = true;
+   }
+   document.getElementById("gostei").textContent = gostei;
+}
+</script>
+
+
+</body>
+</html>
+
